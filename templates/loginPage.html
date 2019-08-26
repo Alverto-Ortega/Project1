@@ -5,5 +5,16 @@
 {% endblock %}
 
 {% block body %}
-    <h1>You are now Registered! :)</h1>
+    <h1>Please Login below: </h1>
+    <form action="{{ url_for('success') }}" method = "POST">
+        <div class="form-group">
+            <input class="form-control" name="name" placeholder="username">
+            <input class="form-control" type="password" name = "password" placeholder="password">       
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary"> Login </button>
+        </div>
+
+    </form>
+
 {% endblock %}

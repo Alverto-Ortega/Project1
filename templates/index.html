@@ -5,12 +5,12 @@
 {% endblock %}
 
 {% block body %}
-    <h1>Register to the sea of imagination!</h1>
+    <h1 style="color:aqua;">Register to the sea of imagination!</h1>
 
-    <form action = "...." method ="...">
-        <div class ="form-group0">
-            <input class ="form-control" name="username" placeholder="username">
-            <input class ="form-control" type="password" placeholder="password">
+    <form action = "{{ url_for('registration') }}" method ="POST">
+        <div class ="form-group">
+            <input class ="form-control" name="name" placeholder="username">
+            <input class ="form-control" type="password" name="password" placeholder="password">
             <!-- add other options for registration later on...-->
         </div>   
         <div class = "form-group">
