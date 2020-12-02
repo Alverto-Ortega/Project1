@@ -1,3 +1,3 @@
-# Project 1
+# Book review application
 
-Web Programming with Python and JavaScript
+Web Programming using Python, some of its' frameworks and Javascript
